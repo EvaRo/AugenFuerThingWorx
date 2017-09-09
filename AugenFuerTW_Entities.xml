@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entities build="b24" majorVersion="7" minorVersion="1" modelPersistenceProviderPackage="H2PersistenceProviderPackage" revision="1" schemaVersion="910"><StyleDefinitions><StyleDefinition description="" documentationContent="" homeMashup="" lastModifiedDate="2016-07-24T20:05:00.109Z" name="Font16Label" projectName="" tags="Applications:AugenFuerThingWorx"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><content><![CDATA[{"image":"","backgroundColor":"","textSize":"xxl","lineStyle":"solid","displayString":"","fontEmphasisUnderline":false,"fontEmphasisItalic":false,"lineThickness":1,"foregroundColor":"#000000","lineColor":"","fontEmphasisBold":true,"secondaryBackgroundColor":""}]]></content><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, foregroundColor : updated, textSize : updated&#10;" timestamp="2016-07-24T18:57:34.051Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : fontEmphasisBold : updated&#10;" timestamp="2016-07-24T18:58:28.733Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2016-07-24T20:05:00.109Z" user="Administrator"/></ConfigurationChanges></StyleDefinition></StyleDefinitions><Networks/><PersistenceProviderPackages/><Mashups><Mashup aspect.isResponsive="true" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="&lt;p&gt;&lt;br&gt;&lt;/p&gt;&#10;" homeMashup="" lastModifiedDate="2016-08-10T12:51:15.361Z" name="ThingsListMashup" projectName="" rows="0.0" tags="Applications:AugenFuerThingWorx"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><ParameterDefinitions/><Things/><ThingShapes/><ThingTemplates><ThingTemplate>RaspberryNewTemplate</ThingTemplate></ThingTemplates><mashupContent><![CDATA[{
+  "RunTimePermissions" : { },
+  "UI" : {
+    "Widgets" : [ {
+      "Widgets" : [ {
+        "Widgets" : [ ],
+        "Properties" : {
+          "Left" : 0.111114501953125,
+          "ItemLoadBehavior" : "load-destroy-on-demand",
+          "ShowDataLoading" : true,
+          "RepeaterUnselectedStyle" : "DefaultRepeaterUnselectedStyle",
+          "MashupHeight" : 200,
+          "SelectionHeight" : 25,
+          "HideInnerScrollbars" : false,
+          "RepeaterSelectedStyle" : "DefaultRepeaterSelectedStyle",
+          "FixedMashupHeight" : 50,
+          "Mashup" : "SingleThingMashup",
+          "entityName" : "name",
+          "Visible" : true,
+          "DisplayName" : "SingleThingRepeater",
+          "Height" : 700,
+          "RepeaterStyle" : "DefaultRepeaterStyle",
+          "RepeaterCellStyle" : "DefaultRepeaterCellStyle",
+          "Width" : 1000,
+          "AllowSelection" : false,
+          "ResponsiveLayout" : false,
+          "Z-index" : 10,
+          "ReuseMashups" : true,
+          "MashupParameters" : [ {
+            "Description" : "",
+            "BaseType" : "STRING",
+            "ParameterName" : "entityName"
+          } ],
+          "MashupWidth" : 200,
+          "View" : "vertical",
+          "__TypeDisplayName" : "Repeater",
+          "Area" : "UI",
+          "Type" : "repeater",
+          "SelectionWidth" : 25,
+          "Top" : 0.111114501953125,
+          "FixedMashupWidth" : 200,
+          "Id" : "Repeater-4",
+          "AutoSelectFirstRow" : false
+        }
+      }, {
+        "Widgets" : [ ],
+        "Properties" : {
+          "AutoRefreshTabSequence" : 0,
+          "Left" : 0.111114501953125,
+          "ShowDataLoading" : false,
+          "Label" : "Refresh Now",
+          "FocusStyle" : "DefaultButtonFocusStyle",
+          "ShowControls" : true,
+          "RefreshToggleStyleOff" : "DefaultAutoRefreshToggleOffStyle",
+          "IconAlignment" : "left",
+          "RefreshInterval" : 60,
+          "Visible" : false,
+          "DisplayName" : "AutoRefresh",
+          "Style" : "DefaultButtonStyle",
+          "Height" : 28,
+          "Width" : 180,
+          "RefreshToggleStyle" : "DefaultAutoRefreshToggleStyle",
+          "ResponsiveLayout" : false,
+          "RefreshNowTabSequence" : 0,
+          "RefreshToggleSliderStyle" : "DefaultAutoRefreshToggleSliderStyle",
+          "Z-index" : 10,
+          "RefreshToggleLabelOff" : "Off",
+          "__TypeDisplayName" : "Auto Refresh",
+          "RefreshToggleLabel" : "On",
+          "HoverStyle" : "DefaultButtonHoverStyle",
+          "Area" : "UI",
+          "Type" : "autorefresh",
+          "Top" : 0.1111297607421875,
+          "Id" : "AutoRefresh-5",
+          "ActiveStyle" : "DefaultButtonActiveStyle",
+          "AutoRefresh" : true
+        }
+      } ],
+      "Properties" : {
+        "Left" : 220,
+        "HideScrollbars" : false,
+        "ResponsiveLayout" : true,
+        "ShowDataLoading" : true,
+        "Z-index" : 10,
+        "VerticalAnchor" : "top",
+        "__TypeDisplayName" : "Panel",
+        "HorizontalAnchor" : "left",
+        "Area" : "UI",
+        "Type" : "panel",
+        "Top" : 130,
+        "Visible" : true,
+        "DisplayName" : "Panel-3",
+        "Style" : "DefaultPanelStyle",
+        "Height" : 200,
+        "Id" : "Panel-3",
+        "Width" : 300
+      }
+    } ],
+    "Properties" : {
+      "MinHeight" : 0,
+      "Left" : 0,
+      "BGImageRepeat" : "no-repeat",
+      "ShowDataLoading" : true,
+      "AddToDashboardButtonStyle" : "DefaultAddToDashboardButtonStyle",
+      "id_index" : 6,
+      "supportsAutoResize" : true,
+      "Visible" : true,
+      "DisplayName" : "Mashup",
+      "Style" : "DefaultMashupStyle",
+      "BGImageSize" : "auto",
+      "Height" : 618,
+      "Width" : 1024,
+      "TitleBar" : false,
+      "Rows" : 0,
+      "ConfigureGadgetButtonStyle" : "DefaultConfigureGadgetButtonStyle",
+      "TitleBarStyle" : "DefaultTitleBarStyle",
+      "ResponsiveLayout" : true,
+      "Title" : "",
+      "Columns" : 0,
+      "Z-index" : 10,
+      "TitleBarText" : "Gadget Title Here",
+      "MinWidth" : 0,
+      "__TypeDisplayName" : "Mashup",
+      "EnableParameterEditing" : false,
+      "Area" : "Mashup",
+      "Type" : "mashup",
+      "Top" : 0,
+      "IsPrintLayout" : false,
+      "MashupToEditGadget" : "DefaultMashupToEditGadget",
+      "Id" : "mashup-root",
+      "IgnoreWarningsInViewMashup" : false
+    }
+  },
+  "Events" : [ {
+    "EventTriggerArea" : "Mashup",
+    "EventHandlerService" : "GetImplementingThings",
+    "EventTriggerSection" : "",
+    "EventHandlerId" : "ThingTemplates_RaspberryNewTemplate",
+    "EventTriggerEvent" : "Loaded",
+    "Id" : "21137981-dc61-461b-bb6d-8726f45cfb83",
+    "EventTriggerId" : "mashup-root",
+    "EventHandlerArea" : "Data"
+  }, {
+    "EventTriggerArea" : "UI",
+    "EventHandlerService" : "GetImplementingThings",
+    "EventTriggerSection" : "",
+    "EventHandlerId" : "ThingTemplates_RaspberryNewTemplate",
+    "EventTriggerEvent" : "Refresh",
+    "Id" : "c048e3ea-9c8b-490d-8f60-b6fdf33ff05a",
+    "EventTriggerId" : "AutoRefresh-5",
+    "EventHandlerArea" : "Data"
+  } ],
+  "mashupType" : "mashup",
+  "DataBindings" : [ {
+    "SourceArea" : "Data",
+    "TargetArea" : "UI",
+    "TargetSection" : "",
+    "SourceId" : "GetImplementingThings",
+    "Id" : "98e9e341-6385-4d2a-8d30-f384913e02c6",
+    "SourceSection" : "ThingTemplates_RaspberryNewTemplate",
+    "SourceDetails" : "AllData",
+    "PropertyMaps" : [ {
+      "SourcePropertyType" : "InfoTable",
+      "TargetProperty" : "Data",
+      "TargetPropertyType" : "property",
+      "SourcePropertyBaseType" : "INFOTABLE",
+      "TargetPropertyBaseType" : "INFOTABLE",
+      "SourceProperty" : ""
+    } ],
+    "TargetId" : "Repeater-4"
+  } ],
+  "Data" : {
+    "ThingTemplates_RaspberryNewTemplate" : {
+      "EntityType" : "ThingTemplates",
+      "Services" : [ {
+        "Target" : "GetImplementingThings",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "0f353a1a-6156-48b4-ba78-c6d631bc9dd8",
+        "Name" : "GetImplementingThings"
+      } ],
+      "EntityName" : "RaspberryNewTemplate",
+      "Id" : "fd767994-c6d5-4bd1-8a10-6c2e23d03792",
+      "DataName" : "ThingTemplates_RaspberryNewTemplate"
+    },
+    "UserExtensions" : {
+      "EntityType" : "UserExtensions",
+      "Services" : [ {
+        "Target" : "GetCurrentUserExtensionProperties",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "UserExtensionInterface",
+        "Name" : "GetCurrentUserExtensionProperties"
+      } ],
+      "EntityName" : "",
+      "Id" : "UserExtensions",
+      "DataName" : "UserExtensions"
+    },
+    "Session" : {
+      "EntityType" : "Session",
+      "Services" : [ {
+        "Target" : "GetGlobalSessionValues",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "SessionInterface",
+        "Name" : "GetGlobalSessionValues"
+      } ],
+      "EntityName" : "",
+      "Id" : "session",
+      "DataName" : "Session"
+    }
+  },
+  "DesignTimePermissions" : { }
+}]]></mashupContent><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;documentation : updated&#10;" timestamp="2016-07-23T18:46:36.216Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T18:49:25.299Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T18:49:27.580Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T18:56:05.707Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="documentation : updated&#10;" timestamp="2016-07-23T18:57:52.627Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T18:58:04.172Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T18:59:11.767Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:04:43.748Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:16:23.569Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:22:58.814Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:25:19.208Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:26:52.817Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:29:23.659Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:32:02.369Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:33:40.646Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:35:13.462Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:37:06.818Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:15:26.452Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:16:14.258Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:20:59.596Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:21:29.895Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:22:48.153Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:29:42.388Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:32:47.334Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:34:43.004Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:34:44.168Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:46:32.682Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:50:37.091Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:50:41.308Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:51:23.606Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:51:25.036Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:52:27.484Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:52:50.743Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:53:18.559Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:53:43.989Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:57:08.907Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:59:18.303Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:59:19.201Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:59:38.517Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:59:39.471Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:00:00.224Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:00:00.920Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:01:20.552Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:01:43.406Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:01:46.170Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:02:58.630Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:04:40.550Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:05:57.275Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:13:28.328Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:15:33.349Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:16:21.227Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:18:01.544Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:18:32.925Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:16:38.106Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:17:32.774Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:33:11.056Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:37:10.388Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:37:34.843Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:39:38.745Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:42:51.553Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:43:35.618Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:44:08.159Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:44:37.510Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:49:23.117Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:58:01.119Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:58:40.367Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:58:41.034Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:59:02.375Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:59:17.403Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T19:02:04.585Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T19:22:58.782Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T19:25:57.012Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T19:30:48.909Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T19:37:44.629Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T19:39:02.767Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T19:40:19.347Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T19:48:52.929Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2016-07-24T20:04:10.594Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T17:30:56.336Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T17:50:43.897Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T17:50:50.158Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T18:08:51.067Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T18:09:38.467Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T18:59:12.396Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T19:00:07.148Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T19:10:25.206Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T19:12:06.101Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T19:13:13.193Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T20:31:56.095Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T09:06:56.826Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T10:31:12.404Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T11:34:19.424Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T12:03:28.136Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T12:32:13.187Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T12:35:56.700Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T12:47:38.945Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T13:42:32.116Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T13:44:29.400Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-08-10T12:21:27.563Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-08-10T12:47:50.670Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-08-10T12:51:15.361Z" user="Administrator"/></ConfigurationChanges></Mashup><Mashup aspect.isResponsive="true" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="&lt;p&gt;&lt;br&gt;&lt;/p&gt;&#10;" homeMashup="" lastModifiedDate="2016-07-27T13:44:26.694Z" name="DataRowOverview" projectName="" rows="0.0" tags="Applications:AugenFuerThingWorx"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><ParameterDefinitions><FieldDefinition aspect.ordinal="0" baseType="STRING" description="" name="entityName" ordinal="0"/></ParameterDefinitions><Things/><ThingShapes/><ThingTemplates><ThingTemplate>RaspberryNewTemplate</ThingTemplate></ThingTemplates><mashupContent><![CDATA[{
+  "RunTimePermissions" : { },
+  "UI" : {
+    "Widgets" : [ {
+      "Widgets" : [ {
+        "Widgets" : [ ],
+        "Properties" : {
+          "AutoRefreshTabSequence" : 0,
+          "Left" : 0.111114501953125,
+          "ShowDataLoading" : true,
+          "Label" : "Refresh Now",
+          "FocusStyle" : "DefaultButtonFocusStyle",
+          "ShowControls" : true,
+          "RefreshToggleStyleOff" : "DefaultAutoRefreshToggleOffStyle",
+          "IconAlignment" : "left",
+          "RefreshInterval" : 10,
+          "Visible" : false,
+          "DisplayName" : "AutoRefresh",
+          "Style" : "DefaultButtonStyle",
+          "Height" : 28,
+          "Width" : 180,
+          "RefreshToggleStyle" : "DefaultAutoRefreshToggleStyle",
+          "ResponsiveLayout" : false,
+          "RefreshNowTabSequence" : 0,
+          "RefreshToggleSliderStyle" : "DefaultAutoRefreshToggleSliderStyle",
+          "Z-index" : 10,
+          "RefreshToggleLabelOff" : "Off",
+          "__TypeDisplayName" : "Auto Refresh",
+          "RefreshToggleLabel" : "On",
+          "HoverStyle" : "DefaultButtonHoverStyle",
+          "Area" : "UI",
+          "Type" : "autorefresh",
+          "Top" : 0.1111297607421875,
+          "Id" : "AutoRefresh-14",
+          "ActiveStyle" : "DefaultButtonActiveStyle",
+          "AutoRefresh" : true
+        }
+      }, {
+        "Widgets" : [ ],
+        "Properties" : {
+          "RowSelectedStyle" : "DefaultRowSelectedStyle",
+          "IsEditable" : false,
+          "GridInvalidFieldStyle" : "DefaultGridInvalidFieldStyle",
+          "Left" : 5.6319580078125,
+          "ShowDataLoading" : true,
+          "GridHeaderStyle" : "DefaultGridHeaderStyle",
+          "RowAlternateBackgroundStyle" : "DefaultRowAlternateBackgroundStyle",
+          "FocusStyle" : "DefaultFocusStyle",
+          "TabSequence" : 0,
+          "RowFormat_StateParameters" : [ ],
+          "CellTextWrapping" : false,
+          "GridBackgroundStyle" : "DefaultGridBackgroundStyle",
+          "RowBackgroundStyle" : "DefaultRowBackgroundStyle",
+          "GridEditableFieldStyle" : "DefaultGridEditableFieldStyle",
+          "Visible" : true,
+          "DisplayName" : "DataRowGrid",
+          "Height" : 620,
+          "Width" : 900,
+          "MultiSelect" : false,
+          "CurrentScrollTop" : 0,
+          "ResponsiveLayout" : false,
+          "ShowAllColumns" : false,
+          "Z-index" : 10,
+          "AlignHeader" : false,
+          "__TypeDisplayName" : "Grid",
+          "ScrollTop" : 0,
+          "RowHeight" : 30,
+          "ColumnFormat" : {
+            "formatInfo" : [ {
+              "ValidationMessage" : "",
+              "Align" : "left",
+              "AllowEdit" : false,
+              "Title" : "MAC-Adresse",
+              "ValidationExpression" : "",
+              "FormatOptions" : {
+                "renderer" : "STRING",
+                "formatInfo" : {
+                  "StateFormats" : [ {
+                    "stateName" : "fixed",
+                    "state" : ""
+                  } ],
+                  "StateDefinition" : "",
+                  "StateDefinitionType" : "fixed",
+                  "FieldName" : ""
+                },
+                "FormatString" : "full"
+              },
+              "FieldName" : "mac",
+              "Width" : "auto"
+            }, {
+              "ValidationMessage" : "",
+              "Align" : "left",
+              "AllowEdit" : false,
+              "Title" : "Zeitmarke",
+              "ValidationExpression" : "",
+              "FormatOptions" : {
+                "renderer" : "DATETIME",
+                "formatInfo" : {
+                  "StateFormats" : [ {
+                    "stateName" : "fixed",
+                    "state" : ""
+                  } ],
+                  "StateDefinition" : "",
+                  "StateDefinitionType" : "fixed",
+                  "FieldName" : ""
+                },
+                "FormatString" : "[[dateTimeFormat_Default]]"
+              },
+              "FieldName" : "stamp",
+              "Width" : "auto"
+            }, {
+              "ValidationMessage" : "",
+              "Align" : "left",
+              "AllowEdit" : false,
+              "Title" : "Information",
+              "ValidationExpression" : "",
+              "FormatOptions" : {
+                "renderer" : "STRING",
+                "formatInfo" : {
+                  "StateFormats" : [ {
+                    "stateName" : "fixed",
+                    "state" : ""
+                  } ],
+                  "StateDefinition" : "",
+                  "StateDefinitionType" : "fixed",
+                  "FieldName" : ""
+                },
+                "FormatString" : "full"
+              },
+              "FieldName" : "info",
+              "Width" : "auto"
+            }, {
+              "ValidationMessage" : "",
+              "Align" : "left",
+              "AllowEdit" : false,
+              "Title" : "Foto",
+              "ValidationExpression" : "",
+              "FormatOptions" : {
+                "renderer" : "HYPERLINK",
+                "formatInfo" : {
+                  "StateFormats" : [ {
+                    "stateName" : "fixed",
+                    "state" : ""
+                  } ],
+                  "StateDefinition" : "",
+                  "StateDefinitionType" : "fixed",
+                  "FieldName" : ""
+                },
+                "FormatString" : "_blank"
+              },
+              "FieldName" : "photoView",
+              "Width" : "auto"
+            } ]
+          },
+          "Area" : "UI",
+          "Type" : "dhxgrid",
+          "Top" : 0.6319427490234375,
+          "IsPrintLayout" : false,
+          "Id" : "Grid-17",
+          "RowHoverStyle" : "DefaultRowHoverStyle",
+          "AutoSelectFirstRow" : false,
+          "GridHeaderTextCase" : "capitalize"
+        }
+      } ],
+      "Properties" : {
+        "Left" : 215,
+        "HideScrollbars" : false,
+        "ResponsiveLayout" : true,
+        "ShowDataLoading" : true,
+        "Z-index" : 10,
+        "VerticalAnchor" : "top",
+        "__TypeDisplayName" : "Panel",
+        "HorizontalAnchor" : "left",
+        "Area" : "UI",
+        "Type" : "panel",
+        "Top" : 115,
+        "Visible" : true,
+        "DisplayName" : "Panel-12",
+        "Style" : "DefaultPanelStyle",
+        "Height" : 200,
+        "Id" : "Panel-12",
+        "Width" : 300
+      }
+    } ],
+    "Properties" : {
+      "MinHeight" : 0,
+      "Left" : 0,
+      "BGImageRepeat" : "no-repeat",
+      "ShowDataLoading" : true,
+      "AddToDashboardButtonStyle" : "DefaultAddToDashboardButtonStyle",
+      "id_index" : 19,
+      "supportsAutoResize" : true,
+      "Visible" : true,
+      "DisplayName" : "Mashup",
+      "Style" : "DefaultMashupStyle",
+      "BGImageSize" : "auto",
+      "Height" : 618,
+      "_currentParameterDefs" : [ {
+        "Description" : "",
+        "BaseType" : "STRING",
+        "ParameterName" : "entityName"
+      } ],
+      "Width" : 1024,
+      "TitleBar" : false,
+      "Rows" : 0,
+      "ConfigureGadgetButtonStyle" : "DefaultConfigureGadgetButtonStyle",
+      "TitleBarStyle" : "DefaultTitleBarStyle",
+      "ResponsiveLayout" : true,
+      "Title" : "",
+      "Columns" : 0,
+      "Z-index" : 10,
+      "TitleBarText" : "Gadget Title Here",
+      "MinWidth" : 0,
+      "__TypeDisplayName" : "Mashup",
+      "EnableParameterEditing" : false,
+      "Area" : "Mashup",
+      "Type" : "mashup",
+      "Top" : 0,
+      "IsPrintLayout" : false,
+      "MashupToEditGadget" : "DefaultMashupToEditGadget",
+      "Id" : "mashup-root",
+      "IgnoreWarningsInViewMashup" : false
+    }
+  },
+  "Events" : [ {
+    "EventTriggerArea" : "Mashup",
+    "EventHandlerService" : "GetAllDataRows",
+    "EventTriggerSection" : "",
+    "EventHandlerId" : "DynamicThingTemplates_RaspberryNewTemplate",
+    "EventTriggerEvent" : "Loaded",
+    "Id" : "fd77ceff-c61f-49b1-8d85-615169fdbf41",
+    "EventTriggerId" : "mashup-root",
+    "EventHandlerArea" : "Data"
+  }, {
+    "EventTriggerArea" : "UI",
+    "EventHandlerService" : "GetAllDataRows",
+    "EventTriggerSection" : "",
+    "EventHandlerId" : "DynamicThingTemplates_RaspberryNewTemplate",
+    "EventTriggerEvent" : "Refresh",
+    "Id" : "e363f3a5-fa66-4c22-8b52-a7c7554e556c",
+    "EventTriggerId" : "AutoRefresh-14",
+    "EventHandlerArea" : "Data"
+  } ],
+  "mashupType" : "mashup",
+  "DataBindings" : [ {
+    "SourceArea" : "Mashup",
+    "TargetArea" : "Data",
+    "TargetSection" : "DynamicThingTemplates_RaspberryNewTemplate",
+    "SourceId" : "mashup-root",
+    "Id" : "2761b33d-3afe-40ba-affd-6534ed648929",
+    "SourceSection" : "",
+    "PropertyMaps" : [ {
+      "TargetProperty" : "value",
+      "TargetPropertyType" : "Entity",
+      "SourcePropertyBaseType" : "STRING",
+      "TargetPropertyBaseType" : "THINGNAME",
+      "SourceProperty" : "entityName"
+    } ],
+    "TargetId" : "EntityName"
+  }, {
+    "SourceArea" : "Data",
+    "TargetArea" : "UI",
+    "TargetSection" : "",
+    "SourceId" : "GetAllDataRows",
+    "Id" : "59c34767-ed10-4555-8079-0c7b403f4211",
+    "SourceSection" : "DynamicThingTemplates_RaspberryNewTemplate",
+    "SourceDetails" : "AllData",
+    "PropertyMaps" : [ {
+      "SourcePropertyType" : "InfoTable",
+      "TargetProperty" : "Data",
+      "TargetPropertyType" : "property",
+      "SourcePropertyBaseType" : "INFOTABLE",
+      "TargetPropertyBaseType" : "INFOTABLE",
+      "SourceProperty" : ""
+    } ],
+    "TargetId" : "Grid-17"
+  } ],
+  "Data" : {
+    "DynamicThingTemplates_RaspberryNewTemplate" : {
+      "EntityType" : "DynamicThingTemplates",
+      "Services" : [ {
+        "Target" : "GetAllDataRows",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "dc8e5c77-ea58-4b5d-a443-c8d38a6fbd9f",
+        "Name" : "GetAllDataRows"
+      } ],
+      "EntityName" : "RaspberryNewTemplate",
+      "Id" : "b4747d3a-0980-417a-9e9e-013edbc858ef",
+      "DataName" : "DynamicThingTemplates_RaspberryNewTemplate"
+    },
+    "UserExtensions" : {
+      "EntityType" : "UserExtensions",
+      "Services" : [ {
+        "Target" : "GetCurrentUserExtensionProperties",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "UserExtensionInterface",
+        "Name" : "GetCurrentUserExtensionProperties"
+      } ],
+      "EntityName" : "",
+      "Id" : "UserExtensions",
+      "DataName" : "UserExtensions"
+    },
+    "Session" : {
+      "EntityType" : "Session",
+      "Services" : [ {
+        "Target" : "GetGlobalSessionValues",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "SessionInterface",
+        "Name" : "GetGlobalSessionValues"
+      } ],
+      "EntityName" : "",
+      "Id" : "session",
+      "DataName" : "Session"
+    }
+  },
+  "DesignTimePermissions" : { }
+}]]></mashupContent><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;documentation : updated&#10;" timestamp="2016-07-23T19:12:48.685Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="documentation : updated&#10;" timestamp="2016-07-23T19:13:34.232Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:14:02.465Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:16:19.257Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:22:53.679Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:25:12.518Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:26:49.122Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:27:29.786Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:29:15.715Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:31:58.164Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:33:37.023Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:35:08.371Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:36:39.440Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:36:41.760Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:15:22.588Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:16:09.706Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:20:55.442Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:21:25.925Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:46:09.820Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:46:28.932Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:57:04.106Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:59:09.840Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:02:37.680Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:02:54.943Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:04:35.115Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:05:53.761Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:06:53.855Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:13:23.618Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:15:29.130Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:16:17.333Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:17:35.910Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:17:57.176Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:18:43.472Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T17:23:06.438Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T17:43:42.432Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T17:46:03.124Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T17:46:04.051Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:14:53.988Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:15:26.243Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:17:27.371Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:25:28.849Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:37:07.638Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:37:31.699Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:42:26.263Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:42:49.444Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:43:33.519Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:44:35.289Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2016-07-24T20:03:41.496Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T10:57:09.667Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T13:41:24.532Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T13:42:29.322Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T13:44:26.694Z" user="Administrator"/></ConfigurationChanges></Mashup><Mashup aspect.isResponsive="true" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="&lt;p&gt;&lt;br&gt;&lt;/p&gt;&#10;" homeMashup="" lastModifiedDate="2016-07-27T10:55:01.536Z" name="SingleThingMashup" projectName="" rows="0.0" tags="Applications:AugenFuerThingWorx"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><ParameterDefinitions><FieldDefinition aspect.ordinal="0" baseType="STRING" description="" name="entityName" ordinal="0"/></ParameterDefinitions><Things/><ThingShapes/><ThingTemplates/><mashupContent><![CDATA[{
+  "RunTimePermissions" : { },
+  "UI" : {
+    "Widgets" : [ {
+      "Widgets" : [ {
+        "Widgets" : [ ],
+        "Properties" : {
+          "TextIfNoValue" : "",
+          "Left" : 10,
+          "ShowDataLoading" : true,
+          "Label" : "",
+          "ValueDisplayLabelStyle" : "DefaultWidgetLabelStyle",
+          "TextIfNoValueOffset" : 0,
+          "Overflow" : "hidden",
+          "ToolTipField" : "",
+          "Alignment" : "left",
+          "TextIfNoValueStyle" : "DefaultValueDisplayNoTextStyle",
+          "ImageScaling" : "width",
+          "Visible" : true,
+          "DisplayName" : "EntityNameValueDisplay",
+          "Height" : 32,
+          "VerticalAlignment" : "middle",
+          "Width" : 226,
+          "ValueDisplayStyle" : "Font16Label",
+          "ValueFormat" : {
+            "renderer" : "DEFAULT"
+          },
+          "__supportsLabel" : true,
+          "BackgroundFill" : "content",
+          "ResponsiveLayout" : false,
+          "LabelAlignment" : "left",
+          "Z-index" : 10,
+          "ValueFormat_StateParameters" : [ ],
+          "__TypeDisplayName" : "Value Display",
+          "Area" : "UI",
+          "Type" : "valuedisplay",
+          "Top" : 10,
+          "Id" : "ValueDisplay-4",
+          "TextWrap" : true
+        }
+      }, {
+        "Widgets" : [ ],
+        "Properties" : {
+          "NavigationHoverStyle" : "DefaultNavigationHoverStyle",
+          "Left" : 245.52780151367188,
+          "ShowDataLoading" : true,
+          "TargetWindow" : "modal-popup",
+          "ShowCloseButton" : true,
+          "ModalPopupOpacity" : 0.5,
+          "TabSequence" : 0,
+          "FixedPopupHeight" : 0,
+          "ToolTipField" : "",
+          "Alignment" : "center",
+          "IconAlignment" : "left",
+          "Visible" : true,
+          "DisplayName" : "NavigationDataRow",
+          "Style" : "DefaultNavigationStyle",
+          "Height" : 30,
+          "Width" : 200,
+          "PopupScrolling" : "auto",
+          "PopupTitle" : "",
+          "ShowMessageIfNoMashup" : false,
+          "MashupName" : "DataRowOverview",
+          "ClickOutsideToClose" : true,
+          "PopupTitleStyle" : "DefaultPopupTitleStyle",
+          "ResponsiveLayout" : false,
+          "Z-index" : 10,
+          "MashupParameters" : [ {
+            "Description" : "",
+            "BaseType" : "STRING",
+            "ParmDef" : {
+              "name" : "entityName",
+              "aspects" : {
+                "ordinal" : "0"
+              },
+              "description" : "",
+              "baseType" : "STRING",
+              "ordinal" : 0
+            },
+            "ParameterName" : "entityName"
+          } ],
+          "Text" : "Gehe zur Übersicht",
+          "FixedPopupWidth" : 0,
+          "RoundedCorners" : true,
+          "__TypeDisplayName" : "Navigation",
+          "MessageToShow" : "Mashup must be selected",
+          "Area" : "UI",
+          "Type" : "navigation",
+          "Transparent" : false,
+          "Top" : 10.52777099609375,
+          "NavigationFocusStyle" : "DefaultNavigationFocusStyle",
+          "Id" : "Navigation-7",
+          "NavigationActiveStyle" : "DefaultNavigationActiveStyle"
+        }
+      } ],
+      "Properties" : {
+        "Left" : 90,
+        "HideScrollbars" : false,
+        "ResponsiveLayout" : true,
+        "ShowDataLoading" : true,
+        "Z-index" : 10,
+        "VerticalAnchor" : "top",
+        "__TypeDisplayName" : "Panel",
+        "HorizontalAnchor" : "left",
+        "Area" : "UI",
+        "Type" : "panel",
+        "Top" : 60,
+        "Visible" : true,
+        "DisplayName" : "Panel-3",
+        "Style" : "DefaultPanelStyle",
+        "Height" : 200,
+        "Id" : "Panel-3",
+        "Width" : 300
+      }
+    } ],
+    "Properties" : {
+      "MinHeight" : 0,
+      "Left" : 0,
+      "BGImageRepeat" : "no-repeat",
+      "ShowDataLoading" : true,
+      "AddToDashboardButtonStyle" : "DefaultAddToDashboardButtonStyle",
+      "id_index" : 7,
+      "supportsAutoResize" : true,
+      "Visible" : true,
+      "DisplayName" : "Mashup",
+      "Style" : "DefaultMashupStyle",
+      "BGImageSize" : "auto",
+      "Height" : 618,
+      "_currentParameterDefs" : [ {
+        "Description" : "",
+        "BaseType" : "STRING",
+        "ParameterName" : "entityName"
+      } ],
+      "Width" : 1024,
+      "TitleBar" : false,
+      "Rows" : 0,
+      "ConfigureGadgetButtonStyle" : "DefaultConfigureGadgetButtonStyle",
+      "TitleBarStyle" : "DefaultTitleBarStyle",
+      "ResponsiveLayout" : true,
+      "Title" : "",
+      "Columns" : 0,
+      "Z-index" : 10,
+      "TitleBarText" : "Gadget Title Here",
+      "MinWidth" : 0,
+      "__TypeDisplayName" : "Mashup",
+      "EnableParameterEditing" : false,
+      "Area" : "Mashup",
+      "Type" : "mashup",
+      "Top" : 0,
+      "IsPrintLayout" : false,
+      "MashupToEditGadget" : "DefaultMashupToEditGadget",
+      "Id" : "mashup-root",
+      "IgnoreWarningsInViewMashup" : false
+    }
+  },
+  "Events" : [ ],
+  "mashupType" : "mashup",
+  "DataBindings" : [ {
+    "SourceArea" : "Mashup",
+    "TargetArea" : "UI",
+    "TargetSection" : "",
+    "SourceId" : "mashup-root",
+    "Id" : "9237cdcc-94df-4f08-8e9a-92112fb7ed76",
+    "SourceSection" : "",
+    "PropertyMaps" : [ {
+      "SourcePropertyType" : "Property",
+      "TargetProperty" : "Data",
+      "TargetPropertyType" : "property",
+      "SourcePropertyBaseType" : "STRING",
+      "TargetPropertyBaseType" : "ANYSCALAR",
+      "SourceProperty" : "entityName"
+    } ],
+    "TargetId" : "ValueDisplay-4"
+  }, {
+    "SourceArea" : "Mashup",
+    "TargetArea" : "UI",
+    "TargetSection" : "",
+    "SourceId" : "mashup-root",
+    "Id" : "42a0f9fd-ec93-4aee-842b-048283beccf0",
+    "SourceSection" : "",
+    "PropertyMaps" : [ {
+      "SourcePropertyType" : "Property",
+      "TargetProperty" : "entityName",
+      "TargetPropertyType" : "property",
+      "SourcePropertyBaseType" : "STRING",
+      "TargetPropertyBaseType" : "STRING",
+      "SourceProperty" : "entityName"
+    } ],
+    "TargetId" : "Navigation-7"
+  } ],
+  "Data" : {
+    "UserExtensions" : {
+      "EntityType" : "UserExtensions",
+      "Services" : [ {
+        "Target" : "GetCurrentUserExtensionProperties",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "UserExtensionInterface",
+        "Name" : "GetCurrentUserExtensionProperties"
+      } ],
+      "EntityName" : "",
+      "Id" : "UserExtensions",
+      "DataName" : "UserExtensions"
+    },
+    "Session" : {
+      "EntityType" : "Session",
+      "Services" : [ {
+        "Target" : "GetGlobalSessionValues",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "SessionInterface",
+        "Name" : "GetGlobalSessionValues"
+      } ],
+      "EntityName" : "",
+      "Id" : "session",
+      "DataName" : "Session"
+    }
+  },
+  "DesignTimePermissions" : { }
+}]]></mashupContent><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;documentation : updated&#10;" timestamp="2016-07-23T18:55:59.944Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T18:56:39.070Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T18:59:07.434Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:02:37.299Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="documentation : updated&#10;" timestamp="2016-07-23T19:03:41.527Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:13:07.609Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:15:59.921Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:23:29.595Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:34:32.717Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:18:38.619Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:16:32.562Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:34:24.636Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:57:57.252Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:59:14.265Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2016-07-24T20:04:51.764Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T17:30:49.126Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T19:00:02.661Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-27T10:55:01.536Z" user="Administrator"/></ConfigurationChanges></Mashup><Mashup aspect.isResponsive="true" aspect.mashupType="mashup" columns="0.0" description="" documentationContent="&lt;p&gt;&lt;br&gt;&lt;/p&gt;&#10;" homeMashup="" lastModifiedDate="2016-07-26T19:13:06.253Z" name="DetailsMashup" projectName="" rows="0.0" tags="Applications:AugenFuerThingWorx"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><ParameterDefinitions><FieldDefinition aspect.ordinal="0" baseType="STRING" description="" name="link" ordinal="0"/></ParameterDefinitions><Things/><ThingShapes/><ThingTemplates/><mashupContent><![CDATA[{
+  "RunTimePermissions" : { },
+  "UI" : {
+    "Widgets" : [ {
+      "Widgets" : [ ],
+      "Properties" : {
+        "TextIfNoValue" : "",
+        "Left" : 0,
+        "ShowDataLoading" : true,
+        "Label" : "",
+        "ValueDisplayLabelStyle" : "DefaultWidgetLabelStyle",
+        "TextIfNoValueOffset" : 0,
+        "Overflow" : "hidden",
+        "ToolTipField" : "",
+        "Alignment" : "center",
+        "TextIfNoValueStyle" : "DefaultValueDisplayNoTextStyle",
+        "ImageScaling" : "width",
+        "Visible" : true,
+        "DisplayName" : "ValueDisplay-4",
+        "Height" : 22,
+        "VerticalAlignment" : "middle",
+        "Width" : 100,
+        "ValueDisplayStyle" : "DefaultValueDisplayStyle",
+        "ValueFormat" : {
+          "renderer" : "IMAGELINK",
+          "formatInfo" : {
+            "StateFormats" : [ {
+              "stateName" : "fixed",
+              "state" : ""
+            } ],
+            "StateDefinition" : "",
+            "StateDefinitionType" : "fixed",
+            "FieldName" : ""
+          },
+          "FormatString" : "image"
+        },
+        "__supportsLabel" : true,
+        "BackgroundFill" : "content",
+        "ResponsiveLayout" : true,
+        "LabelAlignment" : "left",
+        "Z-index" : 10,
+        "ValueFormat_StateParameters" : [ ],
+        "__TypeDisplayName" : "Value Display",
+        "Area" : "UI",
+        "Type" : "valuedisplay",
+        "Top" : 0,
+        "Id" : "ValueDisplay-4",
+        "TextWrap" : true
+      }
+    } ],
+    "Properties" : {
+      "MinHeight" : 0,
+      "Left" : 0,
+      "BGImageRepeat" : "no-repeat",
+      "ShowDataLoading" : true,
+      "AddToDashboardButtonStyle" : "DefaultAddToDashboardButtonStyle",
+      "id_index" : 4,
+      "supportsAutoResize" : true,
+      "Visible" : true,
+      "DisplayName" : "Mashup",
+      "Style" : "DefaultMashupStyle",
+      "BGImageSize" : "auto",
+      "Height" : 618,
+      "_currentParameterDefs" : [ {
+        "Description" : "",
+        "BaseType" : "STRING",
+        "ParameterName" : "link"
+      } ],
+      "Width" : 1024,
+      "TitleBar" : false,
+      "Rows" : 0,
+      "ConfigureGadgetButtonStyle" : "DefaultConfigureGadgetButtonStyle",
+      "TitleBarStyle" : "DefaultTitleBarStyle",
+      "ResponsiveLayout" : true,
+      "Title" : "",
+      "Columns" : 0,
+      "Z-index" : 10,
+      "TitleBarText" : "Gadget Title Here",
+      "MinWidth" : 0,
+      "__TypeDisplayName" : "Mashup",
+      "EnableParameterEditing" : false,
+      "Area" : "Mashup",
+      "Type" : "mashup",
+      "Top" : 0,
+      "IsPrintLayout" : false,
+      "MashupToEditGadget" : "DefaultMashupToEditGadget",
+      "Id" : "mashup-root",
+      "IgnoreWarningsInViewMashup" : false
+    }
+  },
+  "Events" : [ ],
+  "mashupType" : "mashup",
+  "DataBindings" : [ {
+    "SourceArea" : "Mashup",
+    "TargetArea" : "UI",
+    "TargetSection" : "",
+    "SourceId" : "mashup-root",
+    "Id" : "dabf1994-3719-43be-94f0-e6ad6de6ead2",
+    "SourceSection" : "",
+    "PropertyMaps" : [ {
+      "SourcePropertyType" : "Property",
+      "TargetProperty" : "Data",
+      "TargetPropertyType" : "property",
+      "SourcePropertyBaseType" : "STRING",
+      "TargetPropertyBaseType" : "ANYSCALAR",
+      "SourceProperty" : "link"
+    } ],
+    "TargetId" : "ValueDisplay-4"
+  } ],
+  "Data" : {
+    "UserExtensions" : {
+      "EntityType" : "UserExtensions",
+      "Services" : [ {
+        "Target" : "GetCurrentUserExtensionProperties",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "UserExtensionInterface",
+        "Name" : "GetCurrentUserExtensionProperties"
+      } ],
+      "EntityName" : "",
+      "Id" : "UserExtensions",
+      "DataName" : "UserExtensions"
+    },
+    "Session" : {
+      "EntityType" : "Session",
+      "Services" : [ {
+        "Target" : "GetGlobalSessionValues",
+        "Parameters" : { },
+        "APIMethod" : "post",
+        "Characteristic" : "Services",
+        "RefreshInterval" : 0,
+        "Id" : "SessionInterface",
+        "Name" : "GetGlobalSessionValues"
+      } ],
+      "EntityName" : "",
+      "Id" : "session",
+      "DataName" : "Session"
+    }
+  },
+  "DesignTimePermissions" : { }
+}]]></mashupContent><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;documentation : updated&#10;" timestamp="2016-07-24T17:26:50.636Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="documentation : updated&#10;" timestamp="2016-07-24T17:39:58.682Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T17:45:11.035Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T17:58:47.764Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T17:58:50.389Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:06:37.838Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:10:43.305Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:37:03.623Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:39:34.954Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:48:11.458Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:49:19.571Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2016-07-24T20:04:17.708Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T19:09:54.056Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T19:12:03.033Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T19:13:06.253Z" user="Administrator"/></ConfigurationChanges></Mashup></Mashups><ScriptFunctionLibraries/><Projects/><Users/><DirectoryServices/><Widgets/><MediaEntities/><Groups/><PersistenceProviders/><ModelTags/><LocalizationTables/><Dashboards/><DataAnalysisDefinitions/><DataShapes><DataShape baseDataShape="" description="" documentationContent="&lt;p&gt;&lt;br&gt;&lt;/p&gt;&#10;" homeMashup="" lastModifiedDate="2016-07-24T20:04:34.780Z" name="RaspberryImagePathShape" projectName="" tags="Applications:AugenFuerThingWorx"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><FieldDefinitions><FieldDefinition baseType="STRING" description="" name="info" ordinal="3"/><FieldDefinition aspect.isPrimaryKey="true" baseType="STRING" description="" name="mac" ordinal="2"/><FieldDefinition baseType="IMAGELINK" description="" name="photoView" ordinal="1"/><FieldDefinition aspect.isPrimaryKey="true" baseType="DATETIME" description="" name="stamp" ordinal="4"/></FieldDefinitions><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;documentation : updated&#10;fields : photoView : Added, mac : Added, info : Added, stamp : Added&#10;" timestamp="2016-07-23T19:44:00.161Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;documentation : updated&#10;" timestamp="2016-07-24T20:04:34.780Z" user="Administrator"/></ConfigurationChanges></DataShape></DataShapes><Things><Thing description="" documentationContent="&lt;p&gt;&lt;br&gt;&lt;/p&gt;&#10;" effectiveThingPackage="DataTableThing" enabled="true" homeMashup="" identifier="" lastModifiedDate="2016-07-24T20:04:26.976Z" name="DataBaseThing" projectName="" published="false" tags="Applications:AugenFuerThingWorx" thingTemplate="DataTable" valueStream=""><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables><ConfigurationTable description="Data Thing Configuration" isMultiRow="false" name="DataThingSettings" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="Persistence Provider Name" name="persistenceProvider" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><persistenceProvider><![CDATA[ThingworxPersistenceProvider]]></persistenceProvider></Row></Rows></ConfigurationTable><ConfigurationTable description="Index Settings" isMultiRow="true" name="Indexes" ordinal="1"><DataShape><FieldDefinitions><FieldDefinition aspect.friendlyName="Index Field Names" baseType="STRING" description="Index fields" name="fieldNames" ordinal="1"/><FieldDefinition aspect.friendlyName="Index Name" baseType="STRING" description="Index name" name="name" ordinal="0"/></FieldDefinitions></DataShape><Rows/></ConfigurationTable><ConfigurationTable description="Configurable options to tune Data Table performance" isMultiRow="false" name="PersistenceProviderCustomSettings" ordinal="2"><DataShape><FieldDefinitions><FieldDefinition aspect.friendlyName="Persistence Provider Custom Settings Table" baseType="INFOTABLE" description="Persistence Provider Custom Config Table" name="customConfigTable" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><customConfigTable><infoTable><DataShape><FieldDefinitions/></DataShape><Rows/></infoTable></customConfigTable></Row></Rows></ConfigurationTable><ConfigurationTable description="Data Shape Configuration" isMultiRow="false" name="Settings" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition aspect.friendlyName="Data Shape" baseType="DATASHAPENAME" description="Data shape" name="dataShape" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><accumulatedDataShape><json><![CDATA[{"fieldDefinitions":{"photoView":{"name":"photoView","aspects":{},"description":"","baseType":"IMAGELINK","ordinal":2},"stamp":{"name":"stamp","aspects":{"isPrimaryKey":true},"description":"","baseType":"DATETIME","ordinal":3},"mac":{"name":"mac","aspects":{"isPrimaryKey":true},"description":"","baseType":"STRING","ordinal":1},"info":{"name":"info","aspects":{},"description":"","baseType":"STRING","ordinal":0}}}]]></json></accumulatedDataShape><dataShape><![CDATA[RaspberryImagePathShape]]></dataShape></Row></Rows></ConfigurationTable></ConfigurationTables><ThingShape><PropertyDefinitions/><ServiceDefinitions><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="CheckForDeletedThings"><ResultType baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition></ServiceDefinitions><EventDefinitions/><ServiceMappings/><ServiceImplementations><ServiceImplementation description="" handlerName="Script" name="CheckForDeletedThings"><ConfigurationTables><ConfigurationTable description="Script" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var result = ThingTemplates["RaspberryNewTemplate"].GetImplementingThingsWithData();
+
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation></ServiceImplementations><Subscriptions/></ThingShape><PropertyBindings/><RemotePropertyBindings/><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations/><ImplementedShapes/><ThingProperties/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, thingTemplate : updated&#10;documentation : updated&#10;configuration : persistenceProvider : updated, dataShape : updated&#10;" timestamp="2016-07-23T19:45:32.676Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : CheckForDeletedThings : Code Updated, Service Added, Output Updated&#10;" timestamp="2016-07-24T19:58:48.535Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : CheckForDeletedThings : Code Updated&#10;" timestamp="2016-07-24T19:59:27.372Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : CheckForDeletedThings : Output Updated&#10;" timestamp="2016-07-24T19:59:48.600Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : CheckForDeletedThings : Output Updated, Code Updated&#10;" timestamp="2016-07-24T20:00:22.474Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T20:02:45.864Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;documentation : updated&#10;" timestamp="2016-07-24T20:04:26.976Z" user="Administrator"/></ConfigurationChanges></Thing></Things><Logs/><Authenticators/><ThingPackages/><ApplicationKeys><ApplicationKey clientName="" description="" documentationContent="" expirationDate="2116-06-23T08:36:47.854Z" homeMashup="" ipWhitelist="" keyId="7a508e0a-e63b-4b2f-ae59-19e623da6baf" lastModifiedDate="2016-07-28T21:03:45.659Z" name="AppKey" projectName="" tags="Applications:AugenFuerThingWorx" userNameReference="Administrator"><Owner name="Administrator" type="User"/><avatar/><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated, tags : updated, userNameReference : updated&#10;" timestamp="2016-07-17T08:36:47.856Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2016-07-28T21:03:45.659Z" user="Administrator"/></ConfigurationChanges></ApplicationKey></ApplicationKeys><StateDefinitions/><ThingTemplates><ThingTemplate baseThingTemplate="FileRepository" description="" documentationContent="&lt;p&gt;&lt;br&gt;&lt;/p&gt;&#10;" effectiveThingPackage="FileRepositoryThing" homeMashup="" lastModifiedDate="2016-08-10T12:18:04.732Z" name="RaspberryNewTemplate" projectName="" tags="Applications:AugenFuerThingWorx" thingPackage="" valueStream=""><Owner name="Administrator" type="User"/><avatar><![CDATA[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
+SUVORK5CYII=]]></avatar><DesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></DesignTimePermissions><RunTimePermissions/><VisibilityPermissions><Visibility/></VisibilityPermissions><ConfigurationTables/><PropertyBindings/><RemotePropertyBindings/><RemoteServiceBindings/><RemoteEventBindings/><AlertConfigurations><AlertDefinitions name="MACAddress"/></AlertConfigurations><ThingShape><PropertyDefinitions><PropertyDefinition aspect.cacheTime="0.0" aspect.dataChangeType="VALUE" aspect.isLogged="false" aspect.isPersistent="false" aspect.isReadOnly="false" baseType="STRING" category="" description="" isLocalOnly="false" name="MACAddress" ordinal="2"/></PropertyDefinitions><ServiceDefinitions><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="ChangeProperties"><ResultType baseType="NOTHING" description="" name="result" ordinal="0"/><ParameterDefinitions><FieldDefinition baseType="JSON" description="" name="JSONInput" ordinal="1"/></ParameterDefinitions></ServiceDefinition><ServiceDefinition aspect.isAsync="false" category="" description="" isAllowOverride="false" isLocalOnly="false" isOpen="false" isPrivate="false" name="GetAllDataRows"><ResultType aspect.dataShape="RaspberryImagePathShape" baseType="INFOTABLE" description="" name="result" ordinal="0"/><ParameterDefinitions/></ServiceDefinition></ServiceDefinitions><EventDefinitions/><ServiceMappings/><ServiceImplementations><ServiceImplementation description="" handlerName="Script" name="ChangeProperties"><ConfigurationTables><ConfigurationTable description="Script" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[//Pfad unter dem das Foto abgespeichert werden soll, Dateiname jeweils Timestamp
+var path = "/RaspberryFolder/" + JSONInput.stamp + ".jpg";
+
+//Das enkodierte Foto wird unter dem Pfad binaer gespeichert
+var params = {};
+params['path'] = path;
+params['content'] = JSONInput.photo;
+me.SaveBinary(params);
+
+//generiere ImageLink
+var imageParams = {}
+imageParams['path'] = "/RaspberryFolder/";
+imageParams['nameMask'] = JSONInput.stamp + ".jpg";
+
+//Link um Detailansicht-Mashup mit entsprechendem Foto
+var mashupLink = "http://52.205.147.45/Thingworx/Runtime/index.html#mashup=DetailsMashup&link=" + me.GetFileListingWithLinks(imageParams).downloadLink;
+
+//Timestamp wird als String übergeben, übertragenes Format
+//muss zum korrekten Parsen angegeben werden. Zeitzone MESZ wird eingestellt
+var dateValue = parseDate(JSONInput.stamp, "yyyy-MM-dd HH:mm:ss");
+dateValue.setHours(dateValue.getUTCHours() - 2)
+
+//Datenreihe als Infotable wird erstellt
+var infotable =
+Resources["InfoTableFunctions"].CreateInfoTableFromDataShape({
+infoTableName : "InfoTable",
+dataShapeName : "RaspberryImagePathShape"
+});
+
+infotable.AddRow({
+photoView: mashupLink, 
+info: JSONInput.info, 
+mac: me.MACAddress, 
+stamp: dateValue
+});
+
+//Methode um Datensatz im persistenten DataBaseThing abzuspeichern
+var dataParams = {};
+dataParams['values'] = infotable;
+Things["DataBaseThing"].AddDataTableEntry(dataParams);
+]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation><ServiceImplementation description="" handlerName="Script" name="GetAllDataRows"><ConfigurationTables><ConfigurationTable description="Script" isMultiRow="false" name="Script" ordinal="0"><DataShape><FieldDefinitions><FieldDefinition baseType="STRING" description="code" name="code" ordinal="0"/></FieldDefinitions></DataShape><Rows><Row><code><![CDATA[var infotable =
+Resources["InfoTableFunctions"].CreateInfoTableFromDataShape({
+infoTableName : "InfoTable",
+dataShapeName : "RaspberryImagePathShape"
+});
+
+infotable.AddRow({
+mac: me.MACAddress, 
+});
+
+var params = {}
+params['values'] = infotable;
+
+var result = Things["DataBaseThing"].FindDataTableEntries(params)]]></code></Row></Rows></ConfigurationTable></ConfigurationTables></ServiceImplementation></ServiceImplementations><Subscriptions/></ThingShape><ImplementedShapes/><SharedConfigurationTables/><InstanceDesignTimePermissions><Create/><Read/><Update/><Delete/><Metadata/></InstanceDesignTimePermissions><InstanceRunTimePermissions/><InstanceVisibilityPermissions><Visibility/></InstanceVisibilityPermissions><ConfigurationChanges><ConfigurationChange changeAction="CREATE" changeReason="header : name : updated&#10;properties : DataStorage : removed&#10;" timestamp="2016-07-23T17:50:49.181Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ClearDataStorage : removed, GetDataStorage : removed, ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T18:00:40.175Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T18:12:15.502Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T18:15:28.146Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T18:19:26.277Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T18:23:58.176Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T18:34:47.721Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T18:35:22.015Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T18:35:31.973Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T18:38:38.536Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T18:40:41.720Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T18:42:56.124Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T18:46:50.311Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : GetAllDataRows : Output Updated, Code Updated, Service Added&#10;" timestamp="2016-07-23T19:22:17.003Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:28:46.276Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T19:30:53.741Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : GetAllDataRows : Output Updated&#10;" timestamp="2016-07-23T19:34:29.439Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T19:46:17.285Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T20:05:15.756Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T20:06:50.345Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : getImageLink : Code Updated, Output Updated, Service Added&#10;" timestamp="2016-07-23T20:08:51.953Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : getImageLink : Code Updated&#10;" timestamp="2016-07-23T20:09:46.173Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T20:10:36.281Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T20:13:16.096Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : getImageLink : removed, GetAllDataRows : Code Updated&#10;" timestamp="2016-07-23T20:14:43.355Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : GetAllDataRows : Output Updated&#10;" timestamp="2016-07-23T20:20:24.875Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-23T20:32:12.173Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-23T21:19:10.809Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-24T18:01:22.067Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-24T18:32:45.288Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T18:55:23.965Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-24T19:05:13.719Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T19:22:53.883Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-24T19:25:15.178Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-24T19:25:26.033Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-24T19:25:41.504Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-24T19:30:07.371Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-24T19:33:37.410Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-24T19:36:48.625Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-24T19:37:24.777Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-24T19:38:37.275Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ShowDetails : removed&#10;" timestamp="2016-07-24T19:48:49.964Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="header : tags : updated&#10;" timestamp="2016-07-24T20:03:30.987Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-26T17:30:51.569Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="properties : Photo : removed, Info : removed, Timestamp : removed&#10;services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-26T18:04:19.033Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-07-26T18:05:56.980Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="" timestamp="2016-07-26T20:34:09.284Z" user="Administrator"/><ConfigurationChange changeAction="MODIFY" changeReason="services : ChangeProperties : Code Updated&#10;" timestamp="2016-08-10T12:18:04.732Z" user="Administrator"/></ConfigurationChanges></ThingTemplate></ThingTemplates><ExtensionPackages/><Organizations/><Menus/><Resources/><DataTags/><ThingShapes/><Subsystems/></Entities>
